@@ -118,7 +118,8 @@
 
 .gallery-page__semi-track {
 	position: relative;
-	height: clamp(420px, 48vw, 620px);
+    
+	height: clamp(520px, 48vw, 820px);
 	overflow: hidden;
 	border-radius: 1rem 1rem 0 0;
 	border: 1px solid #e5e7eb;
