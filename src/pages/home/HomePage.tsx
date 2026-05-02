@@ -4,15 +4,32 @@ import { Link } from 'react-router-dom'
 import LandingHero from '../../assets/Doorway 4.jpg'
 import GallerySlide1 from '../../assets/Room 3.jpg'
 import GallerySlide2 from '../../assets/Floating 2.jpg'
+import GallerySlide3 from '../../assets/Doorway6.jpeg'
+import GallerySlide4 from '../../assets/Window7.jpeg'
+import GallerySlide5 from '../../assets/Window8.jpeg'
+import GallerySlide6 from '../../assets/Room9.jpeg'
+import GallerySlide7 from '../../assets/Livingroom10.jpeg'
+import GallerySlide8 from '../../assets/Hallway11.jpeg'
+import GallerySlide9 from '../../assets/CurvedWindow12.jpeg'
+import GallerySlide10 from '../../assets/CurvedWindow.jpeg'
 import './Homepage.css'
 
 const gallerySlides = [
   { src: LandingHero, alt: 'Drywall project gallery slide 1' },
   { src: GallerySlide1, alt: 'Drywall project gallery slide 2' },
   { src: GallerySlide2, alt: 'Drywall project gallery slide 3' },
+  { src: GallerySlide3, alt: 'Drywall project gallery slide 3' },
+  { src: GallerySlide4, alt: 'Drywall project gallery slide 4' },
+  { src: GallerySlide5, alt: 'Drywall project gallery slide 5' },
+  { src: GallerySlide6, alt: 'Drywall project gallery slide 6' },
+  { src: GallerySlide7, alt: 'Drywall project gallery slide 7' },
+  { src: GallerySlide8, alt: 'Drywall project gallery slide 8' },
+  { src: GallerySlide9, alt: 'Drywall project gallery slide 9' },
+  { src: GallerySlide10, alt: 'Drywall project gallery slide 10' },
 ]
 
 export function HomePage() {
+ 
   const [activeSlideIndex, setActiveSlideIndex] = useState(0)
 
   useEffect(() => {
@@ -25,15 +42,14 @@ export function HomePage() {
     }
   }, [])
 
-  const goToNextSlide = () => {
-    setActiveSlideIndex((current) => (current + 1) % gallerySlides.length)
-  }
+  useEffect(() => {
+    document.body.classList.add('home-page-active')
 
-  const goToPreviousSlide = () => {
-    setActiveSlideIndex(
-      (current) => (current - 1 + gallerySlides.length) % gallerySlides.length,
-    )
-  }
+    return () => {
+      document.body.classList.remove('home-page-active')
+    }
+  }, [])
+
 
   return (
     <div className="home-page">
@@ -172,29 +188,14 @@ export function HomePage() {
 
           <div className="home-gallery__right">
             <div className="home-gallery__carousel">
-              <button
-                type="button"
-                className="home-gallery__arrow home-gallery__arrow--left"
-                onClick={goToPreviousSlide}
-                aria-label="Previous gallery image"
-              >
-                <span aria-hidden="true">&lt;</span>
-              </button>
+              
 
               <img
                 className="home-gallery__image"
                 src={gallerySlides[activeSlideIndex].src}
                 alt={gallerySlides[activeSlideIndex].alt}
               />
-
-              <button
-                type="button"
-                className="home-gallery__arrow home-gallery__arrow--right"
-                onClick={goToNextSlide}
-                aria-label="Next gallery image"
-              >
-                <span aria-hidden="true">&gt;</span>
-              </button>
+               
             </div>
           </div>
         </div>

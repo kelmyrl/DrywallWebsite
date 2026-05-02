@@ -89,12 +89,12 @@
 }
 
 .home-hero__button--primary {
-  background: #b24324;
+  background: #143058;
   color: #ffffff;
 }
 
 .home-hero__button--primary:hover {
-  background: #9d3a1f;
+  background: #53b4ec;
 }
 
 .home-hero__button--secondary {
@@ -109,8 +109,8 @@
 .home-about {
   width: 100%;
   max-width: 100%;
-  background: var(--panel-bg);
-  border-top: 1px solid #ece5d9;
+  background: #000000;
+  border-top: 1px solid #000000;
 }
 
 .home-about__inner {
@@ -133,12 +133,12 @@
   margin: 0;
   font-size: clamp(2rem, 5vw, 3.4rem);
   line-height: 1.06;
-  color: #111827;
+  color: #ffffff;
 }
 
 .home-about__left p {
   margin: 0;
-  color: #1f2937;
+  color: #ffffff;
   line-height: 1.65;
   font-size: clamp(0.98rem, 1.4vw, 1.12rem);
 }
@@ -152,14 +152,14 @@
   justify-content: center;
   padding: 0.72rem 1rem;
   border-radius: 0.5rem;
-  background: #b24324;
+  background: #143058;
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
 }
 
 .home-about__call:hover {
-  background: #9d3a1f;
+  background: #53b4ec;
 }
 
 .home-about__right {
@@ -188,7 +188,7 @@
 .home-about__owner-summary {
   margin: 0;
   width: min(88%, 460px);
-  color: #1f2937;
+  color: #ffffff;
   line-height: 1.65;
   font-size: clamp(0.98rem, 1.4vw, 1.12rem);
 }
@@ -198,8 +198,8 @@
   max-width: 100%;
   min-height: min(86vh, 780px);
   background: var(--panel-bg);
-  border-top: 1px solid #ece5d9;
-  border-bottom: 1px solid #ece5d9;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .home-services__grid {
@@ -235,7 +235,7 @@
 }
 
 .home-services__card::before {
-  background-image: url('../../assets/Floating 2.jpg');
+  background-image: url('../../assets/Doorway6.jpeg');
   background-position: center;
   background-size: cover;
   filter: blur(5px) brightness(0.72);
@@ -243,11 +243,11 @@
 }
 
 .home-services__card--finish::before {
-  background-image: url('../../assets/Room 3.jpg');
+  background-image: url('../../assets/CurvedWindow.jpeg');
 }
 
 .home-services__card--sanding::before {
-  background-image: url('../../assets/Floating Picture.jpg');
+  background-image: url('../../assets/Window7.jpeg');
 }
 
 .home-services__card::after {
@@ -274,14 +274,14 @@
   font-size: clamp(1.55rem, 2.6vw, 2.3rem);
   line-height: 1.15;
   font-weight: 800;
-  color: #111827;
+  color: #ffffff;
   transition: color 220ms ease;
 }
 
 .home-services__text {
   margin: 0;
   width: min(34ch, 100%);
-  color: #374151;
+  color: #ffffff;
   line-height: 1.65;
   font-size: clamp(0.96rem, 1.3vw, 1.08rem);
   transition: color 220ms ease;
@@ -326,8 +326,7 @@
 .home-gallery {
   width: 100%;
   max-width: 100%;
-  background: var(--panel-bg);
-  border-top: 1px solid #ece5d9;
+  background: #000000;
 }
 
 .home-gallery__inner {
@@ -350,15 +349,15 @@
   margin: 0;
   font-size: clamp(2.1rem, 5vw, 3.6rem);
   line-height: 1.05;
-  color: #111827;
+  color: #ffffff;
 }
 
 .home-gallery__text {
   margin: 0;
-  color: #374151;
+  color: #ffffff;
   line-height: 1.65;
   font-size: clamp(1rem, 1.45vw, 1.12rem);
-  width: min(52ch, 100%);
+  width: min(80ch, 100%);
 }
 
 .home-gallery__button {
@@ -372,12 +371,12 @@
   border-radius: 0.5rem;
   text-decoration: none;
   font-weight: 700;
-  background: #b24324;
+  background: #143058;
   color: #ffffff;
 }
 
 .home-gallery__button:hover {
-  background: #9d3a1f;
+  background: #53b4ec;
 }
 
 .home-gallery__right {
@@ -397,7 +396,7 @@
   width: 100%;
   max-width: 100%;
   display: block;
-  aspect-ratio: 16 / 10;
+  aspect-ratio:  20/ 16;
   object-fit: cover;
 }
 
@@ -433,19 +432,32 @@
 .home-contact-bridge {
   width: 100%;
   max-width: 100%;
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f4ecde 50%, #f4ecde 100%);
+  background: #000000;
   padding: clamp(1.2rem, 3vw, 2.4rem) clamp(1rem, 2.6vw, 2rem);
+  position: relative;
+}
+
+.home-contact-bridge::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: #ffffff;
 }
 
 .home-contact-bridge__box {
   width: min(1200px, 100%);
   margin: 0 auto;
-  background: #ffffff;
+  background: #143058;
   border: 1px solid #ddd6c5;
   border-radius: 0.85rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .home-contact-bridge__item {
@@ -483,13 +495,13 @@
   margin: 0;
   font-size: 1rem;
   font-weight: 800;
-  color: #111827;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 .home-contact-bridge__value {
   margin: 0.2rem 0 0;
-  color: #374151;
+  color: #ffffff;
   font-size: 0.97rem;
 }
 

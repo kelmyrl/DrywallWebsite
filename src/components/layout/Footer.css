@@ -1,9 +1,13 @@
 .site-footer {
   width: 100%;
   max-width: 100%;
-  background: #f4ecde;
-  color: #111111;
-  border-top: 1px solid #d8cfbf;
+  background: #000000;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+body.home-page-active .site-footer {
+  border-top-color: #000000;
 }
 
 .site-footer__content {
@@ -21,13 +25,13 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #111111;
+  color: #ffffff;
 }
 
 .site-footer__column h3 {
   margin: 0 0 0.8rem;
   font-size: 1.05rem;
-  color: #111111;
+  color: #ffffff;
 }
 
 .site-footer__nav {
@@ -36,13 +40,13 @@
 }
 
 .site-footer__nav a {
-  color: #111111;
+  color: #ffffff;
   text-decoration: none;
   width: fit-content;
 }
 
 .site-footer__nav a:hover {
-  color: #000000;
+  color: #53b4ec;
   text-decoration: underline;
 }
 
@@ -61,7 +65,7 @@
 }
 
 .site-footer__bottom small {
-  color: #111111;
+  color: #ffffff;
   letter-spacing: 0.02em;
 }
 

@@ -1,9 +1,14 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import doorwayImg from '../../assets/Doorway 4.jpg'
-import floatingImg from '../../assets/Floating 2.jpg'
-import finishImg from '../../assets/Floating Picture.jpg'
 import roomImg from '../../assets/Room 3.jpg'
+import doorway2Img from '../../assets/Doorway6.jpeg'
+import windowImg from '../../assets/Window7.jpeg'
+import window2Img from '../../assets/Window8.jpeg'
+import room2Img from '../../assets/Room9.jpeg'
+import livingRoomImg from '../../assets/Livingroom10.jpeg'
+import hallwayImg from '../../assets/Hallway11.jpeg'
+import curvedWindowImg from '../../assets/CurvedWindow12.jpeg'
 import './GalleryPage.css'
 
 type GalleryItem = {
@@ -13,17 +18,14 @@ type GalleryItem = {
 
 const galleryItems: GalleryItem[] = [
   { src: doorwayImg, alt: 'Drywall project image 1' },
-  { src: floatingImg, alt: 'Drywall project image 2' },
-  { src: finishImg, alt: 'Drywall project image 3' },
+  { src: doorway2Img, alt: 'Drywall project image 2' },
+  { src: windowImg, alt: 'Drywall project image 3' },
   { src: roomImg, alt: 'Drywall project image 4' },
-  { src: floatingImg, alt: 'Drywall project image 5' },
-  { src: doorwayImg, alt: 'Drywall project image 6' },
-  { src: roomImg, alt: 'Drywall project image 7' },
-  { src: finishImg, alt: 'Drywall project image 8' },
-  { src: doorwayImg, alt: 'Drywall project image 9' },
-  { src: roomImg, alt: 'Drywall project image 10' },
-  { src: finishImg, alt: 'Drywall project image 11' },
-  { src: floatingImg, alt: 'Drywall project image 12' },
+  { src: window2Img, alt: 'Drywall project image 5' },
+  { src: room2Img, alt: 'Drywall project image 6' },
+  { src: livingRoomImg, alt: 'Drywall project image 7' },
+  { src: hallwayImg, alt: 'Drywall project image 8' },
+  { src: curvedWindowImg, alt: 'Drywall project image 9' },
 ]
 
 const ITEMS_PER_PAGE = 8
@@ -90,7 +92,7 @@ export function GalleryPage() {
               <defs>
                 <path
                   id="gallery-circle-path"
-                  d="M130,130 m-102,0 a102,102 0 1,1 204,0 a102,102 0 1,1 -204,0"
+                  d="M130,130 m-102,0 a102,102 0 1,1 205,0 a102,105 0 1,1 -205,0"
                 />
               </defs>
               <text>

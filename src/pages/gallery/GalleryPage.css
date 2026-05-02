@@ -1,11 +1,11 @@
 .gallery-page {
 	width: 100%;
 	max-width: 100%;
-	background: #ffffff;
+	background: #000000;
 }
 
 .gallery-page__top {
-	border-bottom: 1px solid #ece5d9;
+	border-bottom: 1px solid #000000;
 	padding: clamp(1.2rem, 3vw, 2.8rem) clamp(1rem, 3vw, 2rem);
 }
 
@@ -31,7 +31,7 @@
 }
 
 .gallery-page__circle-text text {
-	fill: #1f2937;
+	fill: #ffffff;
 	font-size: 14px;
 	letter-spacing: 1.1px;
 	font-weight: 700;
@@ -50,13 +50,13 @@
 	margin: 0;
 	font-size: clamp(2.2rem, 5vw, 4rem);
 	line-height: 1.05;
-	color: #111827;
+	color: #ffffff;
 }
 
 .gallery-page__heading-wrap p {
 	margin: 0.8rem 0 0;
 	width: min(62ch, 100%);
-	color: #374151;
+	color: #ffffff;
 	line-height: 1.65;
 	font-size: clamp(1rem, 1.4vw, 1.12rem);
 }
@@ -69,14 +69,14 @@
 	min-height: 46px;
 	padding: 0.75rem 1.1rem;
 	border-radius: 0.5rem;
-	background: #b24324;
+	background: #143058;
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 700;
 }
 
 .gallery-page__cta:hover {
-	background: #9d3a1f;
+	background: #53b4ec;
 }
 
 .gallery-page__semi {
@@ -118,13 +118,13 @@
 
 .gallery-page__semi-track {
 	position: relative;
-    
+
 	height: clamp(520px, 48vw, 820px);
 	overflow: hidden;
-	border-radius: 1rem 1rem 0 0;
-	border: 1px solid #e5e7eb;
-	border-bottom: 0;
-	background: linear-gradient(to bottom, #f8fafc, #ffffff);
+	border-radius: 1rem 1rem 1rem 1rem;
+	border: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	background: #000000;
 }
 
 .gallery-page__semi-item {
