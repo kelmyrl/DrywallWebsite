@@ -200,6 +200,9 @@
   background: var(--panel-bg);
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .home-services__grid {
@@ -235,7 +238,7 @@
 }
 
 .home-services__card::before {
-  background-image: url('../../assets/Doorway6.jpeg');
+  background-image: url('../../assets/Doorway6WEBPResized.webp');
   background-position: center;
   background-size: cover;
   filter: blur(5px) brightness(0.72);
@@ -243,11 +246,11 @@
 }
 
 .home-services__card--finish::before {
-  background-image: url('../../assets/CurvedWindow.jpeg');
+  background-image: url('../../assets/CurvedWindowWEBPResized.webp');
 }
 
 .home-services__card--sanding::before {
-  background-image: url('../../assets/Window7.jpeg');
+  background-image: url('../../assets/Window7WEBPResized.webp');
 }
 
 .home-services__card::after {

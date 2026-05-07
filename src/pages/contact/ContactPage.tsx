@@ -30,7 +30,7 @@ export function ContactPage() {
           </a>
         </div>
 
-        <form className="about-page__form">
+        <form className="contact-page__form">
           <label>
             Name
             <input type="text" name="name" placeholder="Your name" />
@@ -51,7 +51,7 @@ export function ContactPage() {
             <input type="text" name="service" placeholder="Service needed" />
           </label>
 
-          <label className="about-page__message-field">
+          <label className="contact-page__message-field">
             Message
             <textarea name="message" rows={5} placeholder="Tell us about your project" />
           </label>

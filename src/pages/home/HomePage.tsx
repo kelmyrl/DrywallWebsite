@@ -1,17 +1,17 @@
 
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import LandingHero from '../../assets/Doorway 4.jpg'
-import GallerySlide1 from '../../assets/Room 3.jpg'
+import LandingHero from '../../assets/Doorway 4WEBPResized.webp'
+import GallerySlide1 from '../../assets/Room 3WEBP.webp'
 import GallerySlide2 from '../../assets/Floating 2.jpg'
-import GallerySlide3 from '../../assets/Doorway6.jpeg'
-import GallerySlide4 from '../../assets/Window7.jpeg'
-import GallerySlide5 from '../../assets/Window8.jpeg'
-import GallerySlide6 from '../../assets/Room9.jpeg'
-import GallerySlide7 from '../../assets/Livingroom10.jpeg'
-import GallerySlide8 from '../../assets/Hallway11.jpeg'
-import GallerySlide9 from '../../assets/CurvedWindow12.jpeg'
-import GallerySlide10 from '../../assets/CurvedWindow.jpeg'
+import GallerySlide3 from '../../assets/Doorway6WEBPResized.webp'
+import GallerySlide4 from '../../assets/Window7WEBPResized.webp'
+import GallerySlide5 from '../../assets/Window8WEBP.webp'
+import GallerySlide6 from '../../assets/Room9WEBP.webp'
+import GallerySlide7 from '../../assets/Livingroom10WEBP.webp'
+import GallerySlide8 from '../../assets/Hallway11WEBP.webp'
+import GallerySlide9 from '../../assets/CurvedWindow12WEBP.webp'
+import GallerySlide10 from '../../assets/CurvedWindowWEBPResized.webp'
 import './Homepage.css'
 
 const gallerySlides = [
@@ -58,6 +58,8 @@ export function HomePage() {
           className="home-hero__image"
           src={LandingHero}
           alt="Drywall craftsmanship"
+          decoding="sync"
+          loading="eager"
         />
 
         <div className="home-hero__overlay">
@@ -121,6 +123,8 @@ export function HomePage() {
                 className="home-about__owner-photo"
                 src={LandingHero}
                 alt="Owner Jose Lemus"
+                decoding="sync"
+                loading="lazy"
               />
             </div>
             <p className="home-about__owner-summary">
@@ -194,6 +198,8 @@ export function HomePage() {
                 className="home-gallery__image"
                 src={gallerySlides[activeSlideIndex].src}
                 alt={gallerySlides[activeSlideIndex].alt}
+                decoding="sync"
+                loading="lazy"
               />
                
             </div>
