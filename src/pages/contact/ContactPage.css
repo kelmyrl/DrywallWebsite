@@ -1,9 +1,9 @@
 .contact-page {
+	padding-top: 100px;
 	width: 100%;
 	max-width: 100%;
-	min-height: min(100vh, 600px);
 	background: #000000;
-	padding: clamp(1rem, 4vw, 3rem) 1rem;
+	
 }
 
 .contact-page__inner {

@@ -4,6 +4,7 @@
 	max-width: 100%;
 	min-height: min(100vh, 980px);
 	overflow: hidden;
+	padding-top: 60px;
 }
 
 .services-page__video {
